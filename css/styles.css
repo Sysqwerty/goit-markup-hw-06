@@ -196,7 +196,7 @@ textarea {
   gap: 76px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .nav {
     gap: 120px;
   }
@@ -230,7 +230,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .contacts {
     flex-direction: column;
     align-items: flex-end;
@@ -238,7 +238,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .contacts .link.contacts-link {
     padding: 0;
     font-size: 12px;
@@ -291,7 +291,7 @@ textarea {
   font-style: normal;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .contacts .link {
     font-size: 12px;
     line-height: 1.16667;
@@ -436,16 +436,18 @@ textarea {
   background-size: auto 100%;
   padding: 112px 0;
   text-align: center;
+}
 
-  /* @media screen and (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg@2x.jpg);
-    } */
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1004,7 +1006,7 @@ textarea {
   max-width: 398px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-subscribe-box {
     max-width: 453px;
   }
@@ -1094,7 +1096,19 @@ textarea {
 
 /* #region Portfolio */
 .section.portfolio {
-  padding-top: 96px;
+  padding-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .section.portfolio {
+    padding-top: 64px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section.portfolio {
+    padding-top: 100px;
+  }
 }
 
 /* #region Filters */
@@ -1150,7 +1164,7 @@ textarea {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .projects {
     row-gap: 72px;
   }
