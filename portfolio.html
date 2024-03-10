@@ -30,11 +30,70 @@
       </nav>
       <address>
         <ul class="list contacts">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com</a></li>
+          <li><a href="tel:+110001111111" class="link contacts-link">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+      <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="mobile-menu-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
+
+    <!-- #region Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle modal-close-btn js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link mobile-current">Portfolio</a></li>
+        <li><a href="./index.html" class="link">Contacts</a></li>
+      </ul>
+      <div class="menu-contacts">
+        <address>
+          <ul class="list menu-contacts-list">
+            <li><a href="tel:+110001111111" class="link menu-contacts-tel">+11 (000) 111-11-11</a></li>
+            <li><a href="mailto:info@devstudio.com" class="link menu-contacts-email">info@devstudio.com</a></li>
+          </ul>
+        </address>
+        <ul class="list menu-soc-list">
+          <li>
+            <a href="" class="link menu-soc-link">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link menu-soc-link">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link menu-soc-link">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link menu-soc-link">
+              <svg class="menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- #endregion Mobile menu -->
   </header>
 
   <main>
@@ -50,7 +109,8 @@
         </ul>
         <ul class="list projects">
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-1.jpg" alt="Project 1" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-1.jpg" alt="Project 1" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -62,7 +122,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-2.jpg" alt="Project 2" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-2.jpg" alt="Project 2" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -74,7 +135,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-3.jpg" alt="Project 3" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-3.jpg" alt="Project 3" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -86,7 +148,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-4.jpg" alt="Project 4" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-4.jpg" alt="Project 4" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -98,7 +161,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-5.jpg" alt="Project 5" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-5.jpg" alt="Project 5" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -110,7 +174,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-6.jpg" alt="Project 6" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-6.jpg" alt="Project 6" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -122,7 +187,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-7.jpg" alt="Project 7" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-7.jpg" alt="Project 7" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -134,7 +200,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-8.jpg" alt="Project 8" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-8.jpg" alt="Project 8" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -146,7 +213,8 @@
             </div>
           </li>
           <li class="project-card">
-            <div class="card-thumb"><img src="./images/projects/img-9.jpg" alt="Project 9" width="360">
+            <div class="card-thumb">
+              <img src="./images/projects/img-9.jpg" alt="Project 9" width="360">
               <div class="card-overlay">
                 <p>14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                   Fruit Ecommerce App · Cloud Storage App</p>
@@ -218,6 +286,11 @@
       </div>
     </div>
   </footer>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

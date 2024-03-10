@@ -239,16 +239,11 @@ textarea {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157.99px) {
-  .contacts-link {
+  .contacts .link.contacts-link {
+    padding: 0;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.004em;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1157.99px) {
-  .contacts .link.contacts-link {
-    padding: 0;
   }
 }
 
@@ -296,7 +291,42 @@ textarea {
   font-style: normal;
 }
 
-/* region Mobile-menu */
+@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+  .contacts .link {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.004em;
+  }
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 24px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+  stroke: var(--navy-blue);
+  transition: stroke var(--animation);
+}
+
+.menu-toggle:hover .mobile-menu-icon,
+.menu-toggle:focus .mobile-menu-icon {
+  stroke: var(--ocean);
+}
+
+/* #region Mobile-menu */
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -390,7 +420,7 @@ textarea {
 .menu-soc-icon {
   fill: var(--cloud);
 }
-/* endregion Mobile-menu */
+/* #endregion Mobile-menu */
 /* #endregion Header */
 
 /* #region Hero */
@@ -724,11 +754,21 @@ textarea {
 .we-doing-card {
   flex-basis: calc((100% - 48px) / 3);
 }
+
+.card-imag {
+  width: 100%;
+  height: auto;
+}
 /* #endregion What are we doing */
 
 /* #region Our Team */
 .team {
   background-color: var(--cloud);
+}
+
+.team-cards {
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -737,9 +777,10 @@ textarea {
   }
 }
 
-.team-cards {
-  justify-content: center;
-  flex-wrap: wrap;
+@media screen and (min-width: 1158px) {
+  .team-cards {
+    flex-wrap: nowrap;
+  }
 }
 
 .team-card {
@@ -795,6 +836,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .customers-list {
     column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .customers-list {
+    flex-wrap: nowrap;
   }
 }
 
@@ -868,9 +915,16 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-container {
+    padding: 0 108px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .footer-container {
     column-gap: 0;
+    flex-wrap: nowrap;
   }
 }
 
@@ -948,6 +1002,12 @@ textarea {
 .footer-subscribe-box {
   width: 100%;
   max-width: 398px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+  .footer-subscribe-box {
+    max-width: 453px;
+  }
 }
 
 .footer-subscribe-form {
@@ -1039,17 +1099,37 @@ textarea {
 
 /* #region Filters */
 .filters {
-  justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .filters {
+    margin-bottom: 72px;
+  }
 }
 
 .filter-btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   background-color: var(--cloud);
   color: var(--iris);
   border: 1px solid var(--cornflower);
   transition: color var(--animation), background-color var(--animation),
     border-color var(--animation), box-shadow var(--animation);
+}
+
+@media screen and (min-width: 768px) {
+  .filter-btn {
+    padding: 12px 24px;
+  }
 }
 
 .filter-btn.active,
@@ -1069,11 +1149,30 @@ textarea {
   row-gap: 48px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157.99px) {
+  .projects {
+    row-gap: 72px;
+  }
+}
+
 .project-card {
-  flex-basis: calc((100% - 48px) / 3);
+  flex-basis: 100%;
+  max-width: 360px;
   background-color: var(--white);
   cursor: pointer;
   transition: box-shadow var(--animation);
+}
+
+@media screen and (min-width: 768px) {
+  .project-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .project-card {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 .project-card:hover,
@@ -1085,6 +1184,10 @@ textarea {
 .card-thumb {
   position: relative;
   overflow: hidden;
+}
+
+.card-thumb img {
+  width: 100%;
 }
 
 .card-overlay {
