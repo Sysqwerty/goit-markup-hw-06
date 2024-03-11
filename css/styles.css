@@ -79,15 +79,22 @@ textarea {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -370,6 +377,10 @@ textarea {
   flex-direction: column;
   gap: 40px;
   margin-bottom: 48px;
+}
+
+.menu-contacts-list .link {
+  font-style: normal;
 }
 
 .menu-contacts-tel {
@@ -851,7 +862,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 190px;
+  width: 180px;
   height: 88px;
   border: 1px solid var(--light-slate);
   border-radius: 4px;
@@ -1162,6 +1173,12 @@ textarea {
   flex-wrap: wrap;
   row-gap: 48px;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
